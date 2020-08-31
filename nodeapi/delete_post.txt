@@ -1,0 +1,11 @@
+delete post
+    whenever there is post id in the url
+        execute postById()
+            postById() will query the database and retrun that post 
+                also populate the user who created the post
+                    and make post available in req ike so 
+                        req.post
+
+
+isPoster()
+    req.post && req.auth && req.post.postedBy._id=req.auth._id;
