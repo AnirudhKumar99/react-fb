@@ -24,7 +24,7 @@ mongoose.connect(
 mongoose.connection.on('error', err => {
     console.log(`DB connection error: ${err.message} `);
 });
-
+// console.log(process.env.JWT_SECRET)
 const app = express();
 
 const postRoutes = require('./routes/post')
